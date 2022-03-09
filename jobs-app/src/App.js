@@ -1,9 +1,9 @@
 import './App.css';
-
+import Card_data from './components/Card_data';
 function App() {
   return (
     <div className="App">
-      App
+      <Card_data/>
     </div>
   );
 }
