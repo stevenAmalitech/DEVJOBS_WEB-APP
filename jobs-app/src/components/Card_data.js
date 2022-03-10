@@ -1,15 +1,18 @@
-const jobs = require('../data.json')
-function Card_data() {
+import Card from './Card';
+
+
+function Card_data({jobs}) {
+
   return (
-    <div>
+    <>
        
          {jobs.map((job)=>(
         
-        <h3> {job.contract} {job.position} {job.company} </h3>
+        <Card key ={job.id} color={job.logoBackground} posted={job.postedAt} contract={job.contract} position={job.position} company={job.company} location={job.location}/>
 
       ))}
 
-    </div>
+    </>
   )
 }
 
