@@ -1,0 +1,142 @@
+* {
+  /* outline: 1px solid red; */
+}
+
+.search-bar {
+  display: flex;
+  background-color: white;
+  padding: 16px;
+  align-items: center;
+}
+
+.search-bar__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-bar__input-field {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  fill: var(--violet);
+}
+
+.search-bar__input-field input[type="text"] {
+  flex-grow: 1;
+  height: 72px;
+  border: none;
+  padding-left: 40px;
+}
+
+.search-bar__input-field input[type="checkbox"] {
+  margin-right: 18px;
+}
+
+.search-bar__hide-mobile {
+  background: white;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 327px;
+  width: 100%;
+  padding: 30px 0;
+  flex-direction: column;
+  display: none;
+}
+
+.search-bar__hide-mobile.show {
+  display: flex;
+}
+
+.search-bar__hide-mobile .search-bar__input-field {
+  padding: 0 30px;
+}
+
+.search-bar__hide-mobile hr {
+  border: solid var(--dark-grey);
+  width: 100%;
+  border-width: 0.5px 0 0 0;
+  margin-bottom: 30px;
+}
+
+.search-bar__hide-mobile button {
+  margin-top: 30px;
+}
+
+.search-bar__show-mobile {
+  display: flex;
+}
+
+.search-bar__show-mobile button {
+  width: 56px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar__show-mobile__button--filter {
+  /* margin-right: 3px; */
+  fill: #6e8098;
+  background-color: white;
+}
+
+.search-bar__show-mobile__button--search {
+  fill: white;
+  background: var(--violet);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+  .search-bar {
+    width: auto;
+  }
+
+  .search-bar__show-mobile {
+    display: none;
+  }
+
+  .search-bar__hide-mobile {
+    position: relative;
+    border-radius: unset;
+    padding: unset;
+    flex-direction: row;
+    align-items: center;
+    width: unset;
+    max-width: unset;
+    top: 0;
+    left: 0;
+    transform: unset;
+    display: flex;
+  }
+
+  .search-bar__hide-mobile hr {
+    display: none;
+  }
+
+  .search-bar__hide-mobile hr {
+    display: none;
+  }
+
+  .search-bar__hide-mobile button {
+    margin-top: unset;
+  }
+
+  .search-bar__input-field {
+    flex-grow: 0;
+    border-right: 1px solid;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
