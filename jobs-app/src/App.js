@@ -1,9 +1,11 @@
 import './App.css';
+import './components/button.css'
+import Button from './components/button'
 
 function App() {
   return (
     <div className="App">
-      <button className='btn1'>Learn more</button>
+      <Button>Learn more</Button>
       <button className='btn2'>Search</button>
     </div>
   );
