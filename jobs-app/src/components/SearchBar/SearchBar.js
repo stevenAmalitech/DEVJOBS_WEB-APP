@@ -13,7 +13,7 @@ function SearchBar(props) {
 
   return (
     <div className="search-bar">
-      <div className="search-bar__input-field">
+      <div className="search-bar__input-field search-bar__input-field--search">
         <span className="search-bar__icon search-bar__icon--search">
           <SearchIcon />
         </span>
@@ -27,7 +27,7 @@ function SearchBar(props) {
             : "search-bar__hide-mobile"
         }
       >
-        <div className="search-bar__input-field">
+        <div className="search-bar__input-field ">
           <span className="search-bar__icon">
             <LocationIcon />
           </span>
@@ -43,7 +43,10 @@ function SearchBar(props) {
       </div>
 
       <div className="search-bar__show-mobile">
-        <button className="search-bar__show-mobile__button--filter" onClick={handleClick}>
+        <button
+          className="search-bar__show-mobile__button--filter"
+          onClick={handleClick}
+        >
           <FilterIcon />
         </button>
 

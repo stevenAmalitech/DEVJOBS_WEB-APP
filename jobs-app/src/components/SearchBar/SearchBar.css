@@ -30,6 +30,10 @@
   padding-left: 40px;
 }
 
+.search-bar__input-field input[type="text"]:focus{
+  outline: none;
+}
+
 .search-bar__input-field input[type="checkbox"] {
   margin-right: 18px;
 }
@@ -117,6 +121,7 @@
     left: 0;
     transform: unset;
     display: flex;
+    flex-grow: 1;
   }
 
   .search-bar__hide-mobile hr {
@@ -133,7 +138,11 @@
 
   .search-bar__input-field {
     flex-grow: 0;
-    border-right: 1px solid;
+    border-right: 1px solid rgba(110, 128, 152, .2);
+  }
+
+  .search-bar__input-field--search{
+    flex-grow: 2;
   }
 
   input[type="text"] {
