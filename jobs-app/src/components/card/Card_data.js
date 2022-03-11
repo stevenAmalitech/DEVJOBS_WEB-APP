@@ -1,7 +1,7 @@
 import Card from './Card';
+const jobs = require('../../data.json')
 
-
-function Card_data({jobs}) {
+function Card_data() {
 
   return (
     <>
