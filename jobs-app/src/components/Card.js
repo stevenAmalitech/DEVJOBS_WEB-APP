@@ -22,7 +22,7 @@ const Card = ({posted,contract,position,company,location,color,logo}) => {
 
        </div>
        <div className="logo" style={{backgroundColor:color}} >
-
+       <img className="svg" src ={logo} alt={company}/>
      </div>
    </div>
   )

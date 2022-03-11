@@ -8,7 +8,7 @@ function Card_data({jobs}) {
        
          {jobs.map((job)=>(
         
-        <Card key ={job.id} color={job.logoBackground} posted={job.postedAt} contract={job.contract} position={job.position} company={job.company} location={job.location}/>
+        <Card logo={job.logo} key ={job.id} color={job.logoBackground} posted={job.postedAt} contract={job.contract} position={job.position} company={job.company} location={job.location}/>
 
       ))}
 

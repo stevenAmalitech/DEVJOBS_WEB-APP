@@ -93,3 +93,9 @@ line-height: 17px;
 
 color: #5964E0;
 }
+
+.svg {
+  position: relative;
+  top: 30%;
+  left: 30%;
+}
