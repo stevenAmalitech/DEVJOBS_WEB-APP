@@ -1,3 +1,4 @@
+import "./Card.css";
 
 const Card = ({posted,contract,position,company,location,color,logo}) => {
   return (
