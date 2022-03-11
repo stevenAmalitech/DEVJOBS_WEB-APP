@@ -1,4 +1,4 @@
-import Card_data from './components/Card_data';
+import Card_data from './components/card/Card_data';
 import {useState} from 'react';
 
 
