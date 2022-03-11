@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Kumbh+Sans:400,700");
+
+
+#root {
+  background-color: #F2F2F2;
+}
+
+.main{
+position: relative;  
+width: 350px;
+height: 253px;
+margin-left : 35px;
+margin-top : 20px;
+background-color: #F2F2F2;
+}
+
+
+.rectangle {
+cursor: pointer; 
+position: absolute;
+bottom: 0px;
+margin-top: 25px;
+width: 350px;
+height: 228px;
+
+background: #FFFFFF;
+border-radius: 6px;
+}
+
+.innergroup {
+position: absolute;
+margin-top: 49px;
+margin-left: 32px;
+width: 286;
+height: 147;
+}
+
+.postedContract {
+
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #6E8098;
+}
+
+.role {
+
+  
+  padding-top: 13px;
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  
+  
+  color: #19202D;
+}
+
+.company {
+padding-top: 12px;  
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #6E8098;
+}
+
+.location {
+padding-top: 44px;  
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+
+color: #5964E0;
+}
+
+.logo{
+  border: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; 
+  position:absolute;
+  margin-left: 32px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: aqua;
+
+}
+
+.svg {
+  width: auto;
+  height: auto;
+}
