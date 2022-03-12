@@ -1,0 +1,22 @@
+.aaa{
+
+width: 1440px;
+height: 160px;
+left: 1440px;
+top: 0px;
+background: #5964E0;
+border-radius: 0px 0px 0px 100px;
+transform: matrix(1, 0, 0, 1, 0, -1);
+}
+
+.bbb{
+position: absolute;
+width: 115px;
+height: 32px;
+left: 165px;
+top: 44px;
+
+}
+
+.daynight{
+}
