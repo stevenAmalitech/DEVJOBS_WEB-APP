@@ -1,12 +1,10 @@
-import './App.css';
-import './components/button.css'
-import Button from './components/button'
+import "./App.css";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Button>Learn more</Button>
-      <button className='btn2'>Search</button>
+      <Home />
     </div>
   );
 }
