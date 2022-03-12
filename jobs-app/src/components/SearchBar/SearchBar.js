@@ -4,11 +4,32 @@ import { ReactComponent as LocationIcon } from "../../assets/icon-location.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icon-search.svg";
 import { useState } from "react";
 
-function SearchBar(props) {
+function SearchBar({ filter }) {
   const [openFilter, setOpenFilter] = useState(false);
+  const [searchFields, setSearchTerms] = useState({
+    term: "",
+    location: "",
+    fullTime: false,
+  });
 
   const handleClick = () => {
     setOpenFilter(!openFilter);
+  };
+
+  const handleChange = ({ target }) => {
+    const { name, value } = target;
+
+    setSearchTerms({ ...searchFields, [name]: value });
+  };
+
+  const handleCheckboxChange = ({ target }) => {
+    const { checked } = target;
+
+    setSearchTerms({ ...searchFields, fullTime: checked });
+  };
+
+  const search = () => {
+    filter(searchFields);
   };
 
   return (
@@ -17,7 +38,13 @@ function SearchBar(props) {
         <span className="search-bar__icon search-bar__icon--search">
           <SearchIcon />
         </span>
-        <input type="text" placeholder="Filter by title..." />
+        <input
+          name="term"
+          type="text"
+          value={searchFields.term}
+          placeholder="Filter by title..."
+          onChange={handleChange}
+        />
       </div>
 
       <div
@@ -31,15 +58,27 @@ function SearchBar(props) {
           <span className="search-bar__icon">
             <LocationIcon />
           </span>
-          <input type="text" placeholder="Filter by location..." />
+          <input
+            type="text"
+            name="location"
+            value={searchFields.location}
+            placeholder="Filter by location..."
+            onChange={handleChange}
+          />
         </div>
         <hr />
 
         <div className="search-bar__input-field">
-          <input type="checkbox" id="full-time-checkbox" />
+          <input
+            type="checkbox"
+            name="fullTime"
+            id="full-time-checkbox"
+            checked={searchFields.fullTime}
+            onChange={handleCheckboxChange}
+          />
           <label className="bold">Full Time Only</label>
         </div>
-        <button> Search </button>
+        <button onClick={search}> Search </button>
       </div>
 
       <div className="search-bar__show-mobile">
@@ -50,7 +89,10 @@ function SearchBar(props) {
           <FilterIcon />
         </button>
 
-        <button className="search-bar__show-mobile__button--search">
+        <button
+          className="search-bar__show-mobile__button--search"
+          onClick={search}
+        >
           <SearchIcon />
         </button>
       </div>
