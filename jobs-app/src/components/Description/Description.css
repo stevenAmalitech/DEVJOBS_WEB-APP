@@ -1,0 +1,104 @@
+ 
+    .desc_rectangle {
+        margin-top: 30px;
+        position: relative;
+        width: 730px;
+        height: 1300px;
+        left: 355px;
+        right: 355px;
+        top: 292px;
+        background-color: #ffffff;
+
+    }
+
+    .desc_innergroup {
+        background-color: #ffffff;
+        position: absolute;
+        margin-top: 48px;
+        margin-left: 48px;
+        width: 639px;
+        height: auto;
+        }
+        
+    .desc_postedContract {
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6E8098;
+        }
+        
+    .desc_role {
+        
+          
+          padding-top: 6px;
+          font-family: 'Kumbh Sans';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 35px;
+          
+          
+          color: #19202D;
+        }
+        
+        
+    .desc_location {
+        padding-left: 3px;
+        padding-top: 9px;  
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        
+        color: #5964E0;
+        }
+
+    .desc_button {
+        cursor: pointer;
+        border-style: none;
+        position: absolute;
+        width: 141px;
+        height: 48px;
+        left: 496px;
+        top: 20px;
+        background-color: #5964E0;
+    }
+    
+    .desc_button_text {
+        color: white;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .desc_description {
+        margin-top: 40px;
+        width: 639px;
+        height: auto;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6E8098;
+    }
+
+    .desc_requirements{
+        margin-top: 40px;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+
+        color: #19202D;
+    }
+
+
+        
