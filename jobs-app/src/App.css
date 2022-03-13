@@ -1,8 +1,9 @@
 /* please set all css variables in :root */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 :root{}
+
+
+body{
+  margin-bottom: 50px;
+  background: #F2F2F2;
+}
