@@ -9,6 +9,7 @@ function Home() {
   const [jobs, setJobs] = useState(data);
   const [descriptionData, setDescriptionData] = useState(null);
 
+
   const filterJobs = ({ term, location, fullTime }) => {
     let filteredJobs = data;
 
@@ -33,6 +34,7 @@ function Home() {
   const displayDescription = (job) => {
     setDescriptionData(job);
   };
+
 
   return (
     <div className="Home">
