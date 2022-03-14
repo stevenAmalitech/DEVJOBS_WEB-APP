@@ -1,3 +1,9 @@
 /* please set all css variables in :root */
 
 :root{}
+
+
+body{
+  margin-bottom: 50px;
+  background: #F2F2F2;
+}
