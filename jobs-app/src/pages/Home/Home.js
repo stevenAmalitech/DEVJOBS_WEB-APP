@@ -6,6 +6,7 @@ import Card from "../../components/Card/Card";
 import Description from "../../components/Description/Description";
 import "./Home.css";
 import Header from "../../components/Header/Header"
+import LearnMore from "../../components/Button/LearnMore";
 import Footer from "../../components/Footer/Footer"
 
 function Home() {
@@ -67,6 +68,7 @@ function Home() {
             </div>
           ))}
         </div>
+        <LearnMore />
         </div>
       ) : (
         <>
@@ -77,7 +79,13 @@ function Home() {
             <p className="desc_button_text">Back</p>
           </button>
           <div className="cards">
-          <Header />
+              <Header
+                logo={descriptionData.logo}
+                key={descriptionData.id}
+                color={descriptionData.logoBackground}
+                company={descriptionData.company}
+                website = {descriptionData.website.slice(8)}
+              />
           </div>
 
           <Description
@@ -91,9 +99,9 @@ function Home() {
             rolcontent={descriptionData.role.content}
             rolitems={descriptionData.role.items}
           ></Description>
-           <div className="cards">
-          <Footer />
-          </div>
+           {/*<div className="cards">
+            <Footer />
+            </div>*/}
         </>
       )}
     </div>

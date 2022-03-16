@@ -7,7 +7,7 @@ const Header = ({color,logo,company,website}) => {
         <div className="row">
         <div className="scoot-box col-2">
             <div className="scoot-name-orange" style={{backgroundColor:color}}>
-                <img className="svg" src ={logo}/>
+                <img className="header_svg" src ={logo}/>
             </div>
         </div>
         <div className="col-8 middle">

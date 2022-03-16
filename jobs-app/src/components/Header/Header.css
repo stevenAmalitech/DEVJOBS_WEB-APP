@@ -2,7 +2,8 @@
     position: absolute;
     width: 730px;
     height: 140px;
-    top: 120px;
+    top: 125px;
+    background-color: white;
 }
 .row{
     height: 140px;
@@ -90,3 +91,8 @@ color: #19202D;
     line-height: 20px;
     text-align: center;
 }
+
+.header_svg {
+    width: 70px;
+    height: auto;
+  }

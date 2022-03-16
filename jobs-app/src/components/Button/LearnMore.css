@@ -1,0 +1,25 @@
+.button_LM {
+    position: relative;
+    padding-left: 47%;
+    top: 300px;
+    padding-bottom: 100px;
+  }
+  
+  .LM-button {
+    cursor: pointer;
+    border-style: none;
+    width: 123px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: #939BF4;
+  }
+  
+  .LM-button-text{
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  }
