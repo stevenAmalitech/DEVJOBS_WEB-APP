@@ -78,7 +78,7 @@ function SearchBar({ filter }) {
           />
           <label className="bold">Full Time Only</label>
         </div>
-        <button onClick={search}> Search </button>
+        <button className="search-button" onClick={search}><p className="search-button-text">Search</p></button>
       </div>
 
       <div className="search-bar__show-mobile">

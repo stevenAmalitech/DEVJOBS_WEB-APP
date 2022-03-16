@@ -2,18 +2,10 @@
     position: absolute;
     width: 730px;
     height: 140px;
-    left: 355px;
     top: 120px;
 }
 .row{
     height: 140px;
-}
-.bg-success{
-    width: 140px;
-}
-.bg-danger{
-    background: #E99210;
-    
 }
 
 .scoot-box{
@@ -26,27 +18,26 @@
 }
     
 .scoot-name-orange{
-    background: #E99210;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 140px;
     height: 140px;
     left: 0px;
-    top: 0px;
-    text-align: center;
-    font-weight: 500;
-    color: white;
-    padding-top: 50px;
 }
 
 .btn-primary{
+    cursor: pointer;
+    border-style: none;
     position: absolute;
-    width: 130px;
-    height: 40px;
-    left: 440px;
-    top: 50px;
-    background: #828bd8fb;
-    mix-blend-mode: normal;
+    width: 147px;
+    height: 48px;
+    left: 540px;
+    top: 40px;
     border-radius: 5px;
+    background-color: #dde1f8;
+   
 }
 
 .apply{
@@ -62,18 +53,40 @@
     height: 56px;
     left: 180px;
     top: 42px;
-    color: black;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+
+color: #19202D;
 }
 .middle-low-text{
     position: absolute;
+    padding-top: 13px;
     width: 78px;
     height: 56px;
     left: 180px;
     top: 75px;
-    color: black;
-    font-weight: 300;
-    font-size: small;
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    color: #6E8098;
 }
 .bg{
     background-color: white;
+}
+
+.button_text {
+    color: #5964E0;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
 }
