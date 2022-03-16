@@ -99,9 +99,12 @@ function Home() {
             rolcontent={descriptionData.role.content}
             rolitems={descriptionData.role.items}
           ></Description>
-           {/*<div className="cards">
-            <Footer />
-            </div>*/}
+           <div className="cards">
+            <Footer 
+            position={descriptionData.position}
+            company={descriptionData.company}
+            />
+            </div>
         </>
       )}
     </div>

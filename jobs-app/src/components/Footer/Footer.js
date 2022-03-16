@@ -1,24 +1,21 @@
 import "./Footer.css"
 
-export const Footer = () => {
+export const Footer = ({position,company}) => {
   return (
-<footer className="text-center text-white fixed-bottom" >
-    
-        
-  
-  
-  <div className="text-center p-3" >
-    <h4>Senior Software Engineer</h4>
-    <p className="text-white">
-        <h6>So Digital Inc</h6> </p>
-        <button type="button" class="btn btn-primary btn-sm apply">Apply Now</button>
+<div className="footer_container" >
+  <div className="footer_rectangle">
+      <div className="footer_role">
+           {position}
+      </div>
+      <div className="footer_company">
+            {company}
+      </div>
+      <button className="footer_button">
+        <p className="footer_button_text">Apply Now
+        </p>
+      </button>
   </div>
-  
-  
-
-  
-  
-</footer>
+</div>
     
   )
 }
