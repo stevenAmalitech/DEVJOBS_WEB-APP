@@ -1,23 +1,24 @@
-import React from 'react'
 
-const Header = () => {
+import "./Header.css"
+
+const Header = ({color,logo,company,website}) => {
   return (
 
     <div className="container">
         <div className="row">
         <div className="scoot-box col-2">
-            <div className="scoot-name-orange ">
-               scoot
-               
+
+            <div className="scoot-name-orange" style={{backgroundColor:color}}>
+                <img className="header_svg" src ={logo}/>
             </div>
-            </div>
+        </div>
         <div className="col-8 middle">
-            <h5 className="middle-text">Scoot</h5>
-            <p className="middle-low-text">scoot.com</p>
+            <p className="middle-text">{company}</p>
+            <p className="middle-low-text">{website}</p>
         </div>
-        <div className="col-2 bg">
-        <button type="button" class="btn btn-primary btn-sm">Company Site</button>
-        </div>
+        
+        <button className="btn-primary"><p className="button_text">Company Site</p></button>
+        
         </div>
         
     </div>

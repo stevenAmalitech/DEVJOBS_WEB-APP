@@ -1,7 +1,5 @@
 import "./Description.css"
 
-let test_array = ['hello','hello','hello','hellohi']
-
 const Description = ({posted,contract,position,location,description,reqcontent,reqitems,rolcontent,rolitems}) => {
   return (
     

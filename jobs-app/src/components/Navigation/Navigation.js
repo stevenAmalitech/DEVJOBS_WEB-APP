@@ -1,18 +1,19 @@
-import React from 'react'
+import "./Navigation.css"
+import {BsSunFill, BsFillMoonFill} from "react-icons/bs";
 
 function Navigation() {
   return (
-    
-<div className="aaa triangle">
-  <div className="container-fluid">
-    <span className="navbar-brand text-white mb-0 h1 bbb">devjobs</span>
-  </div>
-<div className="flex-container">
-<label class="switch">
+<div className="aaa">
+ <p className="name">devjobs</p>
+ <div className="switch">
+<BsSunFill className="sun" size={20} color='white'/>
+<label className="switch">
   <input type="checkbox"/>
-  <span class="slider round"></span>
+  <span className="slider round"></span>
 </label>
-</div>
+<BsFillMoonFill className="moon" size={16}
+color='white'/>
+ </div>
 
 </div>
   )

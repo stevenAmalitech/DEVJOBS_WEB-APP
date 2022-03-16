@@ -1,46 +1,33 @@
-.aaa{
 
-width: 1440px;
-height: 160px;
-left: 1440px;
+@import url("https://fonts.googleapis.com/css?family=Kumbh+Sans:400,700");
+
+.aaa{  
+position: absolute;
+width: 1550px;
+height: 162px;
 top: 0px;
+display: flex;
 background: #5964E0;
 border-radius: 0px 0px 0px 100px;
 transform: matrix(1, 0, 0, 1, 0, -1);
-}
-
-.bbb{
-position: absolute;
-width: 115px;
-height: 32px;
-left: 165px;
-top: 44px;
-
-}
-
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 50px;
-
+align-items: center;
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    left: 500px;
-  }
-  
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 580px;
+  top:26px;
+}
   /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+
   /* The slider */
   .slider {
     position: absolute;
@@ -60,10 +47,10 @@ top: 44px;
     content: "";
     height: 14px;
     width: 14px;
-    left: 8px;
+    left: 7px;
     bottom: 4px;
     top: 5px;
-    background-color: #5964E0;
+    background-color: #939BF4;
     transition: .4s;
   }
   
@@ -77,9 +64,9 @@ top: 44px;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
   }
   
   /* Rounded sliders */
@@ -89,4 +76,32 @@ top: 44px;
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+
+  .sun {
+    size: 20px;
+    position: absolute;
+    left: 599px;
+    top: 29px;
+  }
+
+  .moon {
+    size: 20px;
+    position: absolute;
+    left: 689px;
+    top: 30px;
+  }
+
+  .name {
+    position: absolute;
+    left: 165px;
+    top: 46px;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+
   }

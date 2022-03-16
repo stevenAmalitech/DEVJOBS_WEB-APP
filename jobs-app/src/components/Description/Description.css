@@ -1,10 +1,11 @@
 .desc_rectangle {
+  position: absolute;
     margin: 30px auto;
     width: 730px;
     height: 1300px;
     left: 355px;
     right: 355px;
-    top: 292px;
+    top: 285px;
     background-color: #ffffff;
   }
 
