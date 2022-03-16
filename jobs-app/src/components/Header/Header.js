@@ -1,3 +1,4 @@
+
 import "./Header.css"
 
 const Header = ({color,logo,company,website}) => {
@@ -6,6 +7,7 @@ const Header = ({color,logo,company,website}) => {
     <div className="container">
         <div className="row">
         <div className="scoot-box col-2">
+
             <div className="scoot-name-orange" style={{backgroundColor:color}}>
                 <img className="header_svg" src ={logo}/>
             </div>

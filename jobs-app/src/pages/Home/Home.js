@@ -87,7 +87,6 @@ function Home() {
                 website = {descriptionData.website.slice(8)}
               />
           </div>
-
           <Description
             posted={descriptionData.postedAt}
             contract={descriptionData.contract}
@@ -105,6 +104,7 @@ function Home() {
             company={descriptionData.company}
             />
             </div>
+
         </>
       )}
     </div>

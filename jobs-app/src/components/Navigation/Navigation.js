@@ -3,7 +3,6 @@ import {BsSunFill, BsFillMoonFill} from "react-icons/bs";
 
 function Navigation() {
   return (
-    
 <div className="aaa">
  <p className="name">devjobs</p>
  <div className="switch">
@@ -15,6 +14,7 @@ function Navigation() {
 <BsFillMoonFill className="moon" size={16}
 color='white'/>
  </div>
+
 </div>
   )
 }
