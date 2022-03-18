@@ -86,7 +86,8 @@ function Home() {
                 company={descriptionData.company}
                 website = {descriptionData.website.slice(8)}
               />
-          </div>
+
+
           <Description
             posted={descriptionData.postedAt}
             contract={descriptionData.contract}
@@ -98,7 +99,7 @@ function Home() {
             rolcontent={descriptionData.role.content}
             rolitems={descriptionData.role.items}
           ></Description>
-           <div className="cards">
+          
             <Footer 
             position={descriptionData.position}
             company={descriptionData.company}

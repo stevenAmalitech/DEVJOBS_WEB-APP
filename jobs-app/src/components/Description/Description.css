@@ -1,10 +1,8 @@
 .desc_rectangle {
   position: absolute;
-    margin: 30px auto;
+    margin: 30px;
     width: 730px;
     height: 1300px;
-    left: 355px;
-    right: 355px;
     top: 285px;
     background-color: #ffffff;
   }
@@ -16,6 +14,8 @@
     margin-left: 48px;
     width: 639px;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .desc_postedContract {
@@ -96,4 +96,223 @@
     line-height: 25px;
 
     color: #19202d;
+  }
+
+
+
+
+  @media only screen and (max-width: 800px)
+  {
+
+    .desc_rectangle {
+      position: absolute;
+        margin: 30px;
+        width: min(90%,689px);
+        height: 1450px;
+        top: 285px;
+        background-color: #ffffff;
+      }
+    
+      .desc_innergroup {
+        background-color: #ffffff;
+        position: absolute;
+        margin-top: 48px;
+        margin-left: 48px;
+        width: min(90%,689px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .desc_postedContract {
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6e8098;
+      }
+    
+      .desc_role {
+        padding-top: 6px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+    
+        color: #19202d;
+      }
+    
+      .desc_location {
+        padding-left: 3px;
+        padding-top: 9px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: #5964e0;
+      }
+    
+      .desc_button {
+        cursor: pointer;
+        border-style: none;
+        position: absolute;
+        width: 141px;
+        height: 48px;
+        left: 470px;
+        top: 20px;
+        background-color: #5964e0;
+      }
+    
+      .desc_button.df {
+        position: static;
+      }
+    
+      .desc_button_text {
+        color: white;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+      }
+    
+      .desc_description {
+        margin-top: 40px;
+        width: min(96%,689px);
+        height: auto;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6e8098;
+      }
+    
+      .desc_requirements {
+        margin-top: 40px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    
+        color: #19202d;
+      }
+
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 500px)
+  {
+    .desc_rectangle {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+        width: min(90%,327px);
+        height: 2500px;
+        top: 320px;
+        background-color: #ffffff;
+      }
+    
+      .desc_innergroup {
+        background-color: #ffffff;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 24px;
+        margin-right: 24px;
+        width: min(90%,327px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .desc_postedContract {
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6e8098;
+      }
+    
+      .desc_role {
+        padding-top: 6px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    
+        color: #19202d;
+
+      }
+    
+      .desc_location {
+        padding-left: 3px;
+        padding-top: 9px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    
+        color: #5964e0;
+      }
+    
+      .desc_button {
+        cursor: pointer;
+        border-style: none;
+        width: min(90%,279px);
+        height: 48px;
+        background-color: #5964e0;
+        border-radius: 5px;
+        position: relative;
+        left: 0px;
+      }
+    
+    
+    
+      .desc_button_text {
+        color: white;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+      }
+    
+      .desc_description {
+        margin-top: 40px;
+        width: min(90%,327px);
+        height: auto;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6e8098;
+      }
+    
+      .desc_requirements {
+        margin-top: 40px;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+    
+        color: #19202d;
+      }
   }

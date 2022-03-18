@@ -3,7 +3,8 @@
 
 .aaa{  
 position: absolute;
-width: 1550px;
+width: min(90%,1600px);
+margin-inline: auto;
 height: 162px;
 top: 0px;
 display: flex;
@@ -11,6 +12,16 @@ background: #5964E0;
 border-radius: 0px 0px 0px 100px;
 transform: matrix(1, 0, 0, 1, 0, -1);
 align-items: center;
+}
+
+.switch_container {
+
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 800px;
+  height: 40px;
+
 }
 
 .switch {
@@ -105,3 +116,115 @@ align-items: center;
     color: #FFFFFF;
 
   }
+
+
+  @media only screen and (max-width: 500px)
+  {
+
+    .aaa{  
+      position: absolute;
+      height: 136px;
+      top: 0px;
+      background: #5964E0;
+      align-items: center;
+      border-radius: 0;
+      width: min(100%,500px);
+      }
+      
+      .switch {
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 32px;
+        left: 630px;
+        top:20px;
+      }
+        /* Hide default HTML checkbox */
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+      
+        /* The slider */
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 50px;
+          right: 0;
+          bottom: 0;
+          background-color: #FFFFFF;
+          transition: .4s;
+          width: 48px;
+          height: 24px;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 14px;
+          width: 14px;
+          left: 7px;
+          bottom: 4px;
+          top: 5px;
+          background-color: #939BF4;
+          transition: .4s;
+        }
+        
+        input:checked + .slider {
+          background-color: #FFFFFF;
+          
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(20px);
+          -ms-transform: translateX(20px);
+          transform: translateX(20px);
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      
+      
+        .sun {
+          size: 20px;
+          position: absolute;
+          left: 649px;
+          top: 23px;
+        }
+      
+        .moon {
+          size: 20px;
+          position: absolute;
+          left: 739px;
+          top: 24px;
+        }
+      
+        .name {
+          position: absolute;
+          left: 24px;
+          top: 40px;
+          font-family: "Kumbh Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 35px;
+          color: #FFFFFF;
+      
+        }
+      
+
+  }
+
+  
