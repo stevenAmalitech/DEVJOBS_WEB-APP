@@ -137,11 +137,14 @@ padding-bottom: 100px;
 
 
 
-      @media only screen and (max-width: 400px)
+      @media only screen and (max-width: 500px)
   {
 
       .footer_container {
-      width: min(100%,400px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: min(100%,500px);
       margin-inline: auto;  
       position: absolute;
       background-color: #ffffff;
@@ -152,9 +155,11 @@ padding-bottom: 100px;
     
     
     .footer_rectangle {
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
           padding-left: 0%;    
-          width: min(100%,400px);
+          width: min(100%,500px);
           height: 96px;
           left: 0px;
           right: 0px;
@@ -191,7 +196,7 @@ padding-bottom: 100px;
             position: absolute;
             width: min(100%,327px);
             height: 48px;
-            left: 36.5px;
+            left: 7%;
             top: 25px;
             background: #5964E0;
             border-radius: 5px;
