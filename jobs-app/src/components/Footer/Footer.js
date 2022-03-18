@@ -16,6 +16,8 @@ export const Footer = ({position,company}) => {
       </button>
   </div>
 </div>
+
+
     
   )
 }

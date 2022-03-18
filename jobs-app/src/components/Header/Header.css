@@ -74,8 +74,6 @@ color: #19202D;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
-    
     color: #6E8098;
 }
 .bg{
@@ -95,4 +93,226 @@ color: #19202D;
 .header_svg {
     width: 70px;
     height: auto;
+  }
+
+
+
+  @media only screen and (max-width: 800px)
+  {
+
+    .container{
+        position: absolute;
+        width: min(90%,689px);
+        height: 140px;
+        top: 125px;
+        background-color: white;
+    }
+    .row{
+        height: 140px;
+    }
+    
+    .scoot-box{
+        position: absolute;
+        width: min(90%,689px);
+        height: 140px;
+        left: 0px;
+        top: 0;
+        border-radius: 0px 0px 0px 6px;
+    }
+        
+    .scoot-name-orange{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        left: 0px;
+    }
+    
+    .btn-primary{
+        cursor: pointer;
+        border-style: none;
+        position: absolute;
+        width: 147px;
+        height: 48px;
+        left: 490px;
+        top: 40px;
+        border-radius: 5px;
+        background-color: #dde1f8;
+       
+    }
+    
+    .apply{
+        top: 32px;
+        left: 940px;
+    }
+    .middle{
+        background-color: white;
+    }
+    .middle-text{
+        position: absolute;
+        width: 500px;
+        height: 56px;
+        left: 180px;
+        top: 42px;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+    
+    color: #19202D;
+    }
+    .middle-low-text{
+        position: absolute;
+        padding-top: 13px;
+        width: 78px;
+        height: 56px;
+        left: 180px;
+        top: 75px;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6E8098;
+    }
+    .bg{
+        background-color: white;
+    }
+    
+    .button_text {
+        color: #5964E0;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .header_svg {
+        width: 70px;
+        height: auto;
+      }
+    
+
+  }
+
+
+
+
+
+  @media only screen and (max-width: 400px)
+  {
+
+    .container{
+        position: absolute;
+        width: min(90%,327px);
+        height: 220px;
+        top: 95px;
+        background-color: #5964E0;
+        border-radius: 6px;
+    }
+    .row{
+        width: min(100%,327px);
+        height: 195px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0px;
+        margin-top: 25px;
+        border-radius: 6px;
+    }
+    
+    .scoot-box{
+        position: absolute;
+        border: 1px;
+        margin-left: 40%;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        border-radius: 15px;
+        background-color: aqua;
+    }
+        
+    .scoot-name-orange{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        border-radius: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btn-primary{
+        cursor: pointer;
+        border-style: none;
+        position: absolute;
+        width: 147px;
+        height: 40px;
+        left: 85px;
+        top: 140px;
+        border-radius: 5px;
+        background-color: #dde1f8;
+       
+    }
+    
+    .apply{
+        top: 32px;
+        left: 940px;
+    }
+    .middle{
+        background-color: white;
+    }
+    .middle-text{
+        position: absolute;
+        width: 500px;
+        height: 56px;
+        left: 38%;
+        top: 54px;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+    
+    color: #19202D;
+    }
+    .middle-low-text{
+        position: absolute;
+        padding-top: 13px;
+        width: 78px;
+        height: 56px;
+        left: 25%;
+        top: 80px;
+        font-family: 'Kumbh Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6E8098;
+    }
+    .bg{
+        background-color: white;
+    }
+    
+    .button_text {
+        color: #5964E0;
+        font-family: "Kumbh Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .header_svg {
+        width: auto;
+        height: auto;
+      }
+
+
+
   }
