@@ -86,7 +86,8 @@ function Home() {
                 company={descriptionData.company}
                 website = {descriptionData.website.slice(8)}
               />
-          
+
+
           <Description
             posted={descriptionData.postedAt}
             contract={descriptionData.contract}
